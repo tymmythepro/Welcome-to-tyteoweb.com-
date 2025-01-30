@@ -154,21 +154,6 @@ header {
         <!-- Messages will appear here -->
     </div>
 </div>
-
-<script>
-document.getElementById('discussionForm').addEventListener('submit', function(event) {
-    event.preventDefault();
-    const username = document.getElementById('username').value;
-    const message = document.getElementById('message').value;
-    const discussionMessages = document.getElementById('discussionMessages');
-
-    const newMessage = document.createElement('p');
-    newMessage.textContent = `${username}: ${message}`;
-    discussionMessages.appendChild(newMessage);
-
-    document.getElementById('discussionForm').reset();
-});
-</script>
 <p id="c">Enfin, si vous voulez retourner sur cette page, cliquez sur la flèche "<--" qui se trouve en haut à gauche de la page ^^</p>
 </body>
 </html>
